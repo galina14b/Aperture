@@ -1,0 +1,22 @@
+.help {
+  padding: 115px 20px 110px;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  text-align: center;
+
+  &__info {
+    margin: 0 auto;
+    max-width: 576px;
+  }
+
+  &__btn {
+    margin: 36px auto 0;
+  }
+}
+
+@media all and (max-width: 465px) {
+  .help {
+    padding: 115px 10px 110px;
+    width: calc(100% - 20px);
+  }
+}

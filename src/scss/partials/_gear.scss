@@ -1,0 +1,50 @@
+.gear {
+  position: relative;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    max-width: 515px;
+    padding: 175px 20px 150px 100px;
+    width: 50%;
+
+    & h2,h3 {
+      text-align: left;
+    }
+  }
+
+  &__img {
+    background-image: url('../images/gear/background.png');
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .gear__info {
+    padding: 175px 20px 150px;
+  }
+}
+
+@media all and (max-width: 465px) {
+  .gear {
+    display: block;
+
+    &__info {
+      padding: 175px 10px 30px;
+      width: calc(100% - 20px);
+    }
+
+    &__img {
+      width: 100%;
+      height: 300px;
+    }
+
+    &__params {
+      padding: 30px 0;
+    }
+  }
+
+  
+}

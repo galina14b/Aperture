@@ -1,0 +1,134 @@
+.header {
+  max-width: 1200px;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  width: calc(100% - 60px);
+  margin: 0 auto;
+  padding: 20px 30px;
+
+  &__logo {
+    flex-grow: 2;
+  }
+
+  &__list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+    &-item {
+      padding: 5px 15px;
+      box-sizing: border-box;
+      position: relative;
+
+      &:last-child {
+        display: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform-origin: center;
+      }
+
+      &::before {
+        border-top: 1px solid $main-color;
+        border-bottom: 1px solid $main-color;
+        transform: scale3d(0, 1, 1);
+      }
+      
+      &::after {
+        border-left: 1px solid $main-color;
+        border-right: 1px solid $main-color;
+        transform: scale3d(1, 0, 1);
+      }
+      
+      &:hover::before,
+      &:hover::after {
+        transform: scale3d(1, 1, 1);
+        transition: transform 0.5s;
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-size: 13px;
+      font-weight: 400;
+    }
+  }
+
+  &__btn {
+    margin-left: 15px;
+}
+
+.btn_white {
+  font-weight: 400;
+    background: $main-color;
+    border: 1px solid $main-color;
+    border-radius: 14px;
+    width: 153px;
+    height: 40px;
+  
+    &:hover {
+      cursor: pointer;
+      background: transparent;
+      border: 1px solid $main-color;
+      color: $main-color;
+      transition: linear 0.3s
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+@media all and (max-width: 890px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header__nav {
+    display: none;
+  }
+} 
+
+@media all and (max-width: 769px) {
+  .header {
+    padding: 20px;
+    width: calc(100% - 40px);
+  }
+}
+
+@media all and (max-width: 465px) {
+  .header {
+    padding: 20px 10px;
+    width: calc(100% - 20px);
+  }
+}
+
+@media all and (max-width: 420px) {
+  .header__btn {
+    display: none;
+  }
+
+  .header__list-btn {
+    display: block;
+  }
+}
