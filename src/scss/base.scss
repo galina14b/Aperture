@@ -96,11 +96,13 @@ $secondary-color: #FFFFFF;
   width: 143px;
   height: 42px;
   border-radius: 14px;
+  border: none;
   background: $main-color;
   color: #000;
   font-size: 15px;
   line-height: 20px;
   letter-spacing: 0.4px;
+  transition: linear 0.4s;
 }
 
 .circle {
@@ -109,7 +111,17 @@ $secondary-color: #FFFFFF;
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #000
+  background-color: $bg-color;
+}
+
+.btn_black:hover {
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: $bg-color;
+
+  & .circle {
+    background-color: #FFFFFF;
+  }
 }
 
 .picture-block {

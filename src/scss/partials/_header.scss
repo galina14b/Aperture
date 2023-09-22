@@ -40,6 +40,7 @@
         height: 100%;
         width: 100%;
         transform-origin: center;
+        transition: transform 0.5s;
       }
 
       &::before {
@@ -57,7 +58,6 @@
       &:hover::before,
       &:hover::after {
         transform: scale3d(1, 1, 1);
-        transition: transform 0.5s;
       }
     }
 
@@ -75,18 +75,18 @@
 
 .btn_white {
   font-weight: 400;
-    background: $main-color;
-    border: 1px solid $main-color;
-    border-radius: 14px;
-    width: 153px;
-    height: 40px;
+  background: $main-color;
+  border: 1px solid $main-color;
+  border-radius: 14px;
+  width: 153px;
+  height: 40px;
+  transition: linear 0.3s;
   
     &:hover {
       cursor: pointer;
       background: transparent;
       border: 1px solid $main-color;
       color: $main-color;
-      transition: linear 0.3s
     }
   }
 }
