@@ -4,32 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel='stylesheet' href='dist/style.css'>
+    <link rel="shortcut icon" href="dist/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/favicon-16x16.png">
+    <link type="text/html" rel='stylesheet' href='dist/style.css'>
     <title>Aperture</title>
   </head>
   <script type="module" src="dist/bundle.js"></script>
+
   <body class="body">
 
     <header class="header wrapper">
       <div class="header__logo logo"></div>
 
-      <nav class="header__nav">
+      <nav class="header__nav hidden">
         <ul class="header__list">
-          <li class="header__list-item"><a class="header__list-link" href="#">Business areas</a></li>
-          <li class="header__list-item"><a class="header__list-link" href="#">Featured images</a></li>
-          <li class="header__list-item"><a class="header__list-link" href="#">Gear cage</a></li>
-          <li class="header__list-item"><a class="header__list-link" href="#">Contact</a></li>
+          <li class="header__list-item"><a class="header__list-link" href="#business">Business areas</a></li>
+          <li class="header__list-item"><a class="header__list-link" href="#images">Featured images</a></li>
+          <li class="header__list-item"><a class="header__list-link" href="#cage">Gear cage</a></li>
+          <li class="header__list-item"><a class="header__list-link" href="#contact">Contact</a></li>
           <li class="header__list-item"><button class="header__list-btn btn_white">Get template</button></li>
         </ul>
       </nav>
 
       <div class="hamburger" id="jsMenuMobile">
-        <svg height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path
-                  d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z"
-                  fill="white"></path>
-        </svg>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
           
     <button class="header__btn btn_white">Get template</button>
@@ -37,7 +41,7 @@
         
     </header>
 
-    <section class="intro">
+    <section id="business" class="intro">
       <div class="background intro__background"></div>
 
       <div class="intro__info">
@@ -66,6 +70,7 @@
           </svg>
           1/2000s
         </div>
+
         <div class="params-block__item">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2_36)">
@@ -81,6 +86,7 @@
           </svg>
           f/11
         </div>
+
         <div class="params-block__item">
           <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2_30)">
@@ -96,6 +102,7 @@
           </svg>
           100
         </div>
+
         <div class="params-block__item">
           <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_2_42)">
@@ -114,7 +121,7 @@
       </div>
     </section>
 
-    <section class="what-do">
+    <section id="images" class="what-do">
       <h2 class="title">What we do.</h2>
       <p class="what-do__text text">The areas that we're specialized in.</p>
       
@@ -122,9 +129,7 @@
         <div class="what-do__grid-item">
           <div class="what-do__grid-wrapper">
             <h3 class="what-do__grid-title sub-title">Product Photography</h3>
-            <p class="what-do__grid-text text">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut
-              orci varius,
-              faucibus libero ac, cursus quam.</p>
+            <p class="what-do__grid-text text">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam utorci varius, faucibus libero ac, cursus quam.</p>
             <button class="btn_black"><span class="circle"></span>Read more</button>
           </div>
         </div>
@@ -132,8 +137,7 @@
         <div class="what-do__grid-item">
           <div class="what-do__grid-wrapper">
             <h3 class="sub-title">Architecture Photography</h3>
-            <p class="what-do__grid-text text">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec
-            auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
+            <p class="what-do__grid-text text">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
             <button class="btn_black"><span class="circle"></span>Read more</button>
           </div>
         </div>
@@ -186,7 +190,7 @@
               </clipPath>
             </defs>
           </svg>
-          1/2000s
+          1''
         </div>
         <div class="params-block__item">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,7 +205,7 @@
               </clipPath>
             </defs>
           </svg>
-          f/11
+          f/16
         </div>
         <div class="params-block__item">
           <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -216,7 +220,7 @@
               </clipPath>
             </defs>
           </svg>
-          100
+          400
         </div>
         <div class="params-block__item">
           <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -231,12 +235,12 @@
               </clipPath>
             </defs>
           </svg>
-          Iceland
+          Japan
         </div>
       </div>
     </section>
 
-    <section class="gear">
+    <section id="cage" class="gear">
       <div class="gear__info">
         <h3 class="sub-title">The Gear cage</h3>
         <h2 class="title">The tools that we use.</h2>
@@ -263,7 +267,7 @@
               </clipPath>
             </defs>
           </svg>
-          1/2000s
+          0,8''
         </div>
         <div class="params-block__item">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -278,7 +282,7 @@
               </clipPath>
             </defs>
           </svg>
-          f/11
+          f/5,6
         </div>
         <div class="params-block__item">
           <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -308,7 +312,7 @@
               </clipPath>
             </defs>
           </svg>
-          Iceland
+          Sweden
         </div>
       </div>
     </section>
@@ -337,7 +341,7 @@
               </clipPath>
             </defs>
           </svg>
-          1/2000s
+          1/400s
         </div>
         <div class="params-block__item">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -352,7 +356,7 @@
               </clipPath>
             </defs>
           </svg>
-          f/11
+          f/3,5
         </div>
         <div class="params-block__item">
           <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -382,7 +386,7 @@
               </clipPath>
             </defs>
           </svg>
-          Iceland
+          Costa Rica
         </div>
       </div>
     </section>
@@ -538,9 +542,7 @@
 
     <section class="help">
       <div class="help__info">
-        <h2 class="title">
-          Need help with photography or videography?
-        </h2>
+        <h2 class="title">Need help with photography or videography?</h2>
         <p class="text">We're here for you!</p>
         <button class="btn_black help__btn">
           <span class="circle"></span>Get in touch
@@ -548,7 +550,12 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <div class="arrow">
+      <span></span>
+      <span></span>
+    </div>
+
+    <footer id="contact" class="footer">
       <div class="footer__top">
         <div class="top__item">
           <div class="logo"></div>

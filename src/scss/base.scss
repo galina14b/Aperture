@@ -162,6 +162,7 @@ $secondary-color: #FFFFFF;
 }
 
 @import '../scss/partials/header';
+
 @import '../scss/partials/intro';
 @import '../scss/partials/what-do';
 @import '../scss/partials/sunset';
@@ -170,4 +171,7 @@ $secondary-color: #FFFFFF;
 @import '../scss/partials/clients';
 @import '../scss/partials/star-falls';
 @import '../scss/partials/help';
+
+@import '../scss/partials/arrow';
+
 @import '../scss/partials/footer';
